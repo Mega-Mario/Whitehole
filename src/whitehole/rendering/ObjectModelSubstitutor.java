@@ -31,12 +31,26 @@ public class ObjectModelSubstitutor
         switch (obj.name)
         {
             case "BenefitItemOneUp": return "KinokoOneUp";
-            case "SplashPieceBlock": return "CoinBlock";
-                
-            case "Karikari": return "Karipon";
-                
-            case "JetTurtle": return "Koura";
+            case "SplashPieceBlock": return "CoinBlock";                
+            case "Karikari": return "Karipon";                
+            case "JetTurtle": return "Koura";           
+            case "BenefitItemInvincible": return "PowerUpInvincible";                
+            case "BenefitItemLifeUp": return "KinokoLifeUp";               
+            case "MorphItemNeoBee": return "PowerUpBee";                
+            case "MorphItemNeoFire": return "PowerUpFire";    
+            case "MorphItemNeoHopper": return "PowerUpHopper";
+            case "MorphItemNeoIce": return "PowerUpIce"; 
+                //TODO Figure out why PowerUpIce doesn't render
+            case "MorphItemNeoTeresa": return "PowerUpTeresa"; 
+            case "SpinCloudItem": return "PowerUpCloud";
+            case "MorphItemRock": return "PowerUpRock"; 
+            case "YoshiCapture": return "YCaptureTarget";
+            case "WingBlockStarPiece": return "WingBlock";
+            case "WingBlockCoin": return "WingBlock";
+            case "HanachanBig": return "HanachanHeadBig";        
+            
         }
+       
         //modelname="TicoCoin";//"VROrbit";//"CollapsePlane";
         return modelname;
     }
@@ -51,7 +65,8 @@ public class ObjectModelSubstitutor
             case "KinopioAstro": objectkey = String.format("object_Kinopio_%1$d", obj.data.get("Obj_arg1")); break;
                 
             case "UFOKinoko": objectkey = String.format("object_UFOKinoko_%1$d", obj.data.get("Obj_arg0")); break;
-                
+
+            
             case "AstroDome":
             case "AstroDomeEntrance":
             case "AstroDomeSky":
@@ -70,8 +85,11 @@ public class ObjectModelSubstitutor
             
             switch (obj.name)
             {
-                case "Patakuri": return new DoubleBmdRenderer(info, "Kuribo", new Vector3(), "PatakuriWing", new Vector3(0f,15f,-25f));
+                case "Patakuri": return new DoubleBmdRenderer(info, "Kuribo", new Vector3(), "PatakuriWing", new Vector3(0f,15f,-25f));               
+                case "PatakuriBig": return new DoubleBmdRenderer(info, "KuriboChief", new Vector3(), "PatakuriWingBig", new Vector3(0f,15f,-25f));               
                 case "Kinopio": 
+                
+                
                 case "KinopioAstro": return new ObjRenderer_Kinopio(info, (int)obj.data.get("Obj_arg1"));
                     
                 case "UFOKinoko": return new ObjRenderer_UFOKinoko(info, (int)obj.data.get("Obj_arg0"));
@@ -79,6 +97,7 @@ public class ObjectModelSubstitutor
                 case "Pole": return new ObjRenderer_Pole(info, obj.scale);
                     
                 case "FlagKoopaA": return new BtiRenderer(info, "FlagKoopaA", new Vector3(0f,150f,0f), new Vector3(0f,-150f,600f), true);
+              
                     
                 case "AstroDome":
                 case "AstroDomeEntrance":
@@ -92,5 +111,8 @@ public class ObjectModelSubstitutor
         catch (IOException ex) {}
         
         return null;
+        
+        
+        
     }
 }
