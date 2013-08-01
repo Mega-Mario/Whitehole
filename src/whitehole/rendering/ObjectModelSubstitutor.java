@@ -36,6 +36,20 @@ public class ObjectModelSubstitutor
             case "Karikari": return "Karipon";
                 
             case "JetTurtle": return "Koura";
+            
+            case "BenefitItemInvincible": return "PowerUpInvincible";
+                
+            case "BenefitItemLifeUp": return "KinokoLifeUp";
+                
+            case "MorphItemNeoBee": return "PowerUpBee";
+                
+            case "MorphItemNeoFire": return "PowerUpFire";
+                
+            case "MorphItemNeoHopper": return "PowerUpHopper";
+                
+            case "MorphItemNeoIce": return "PowerUpIce";
+                                
+            case "MorphItemNeoTeresa": return "PowerUpTeresa";                                
         }
         //modelname="TicoCoin";//"VROrbit";//"CollapsePlane";
         return modelname;
