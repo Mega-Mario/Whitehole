@@ -895,6 +895,22 @@ public class GalaxyEditorForm extends javax.swing.JFrame
         populateObjectSublist(layermask, objnode, StartObject.class);
         
         objnode = new ObjListTreeNode();
+        objnode.setUserObject("Areas");
+        root.add(objnode);
+        populateObjectSublist(layermask, objnode, AreaObject.class);  
+        
+        objnode = new ObjListTreeNode();
+        objnode.setUserObject("Camera Areas");
+        root.add(objnode);
+        populateObjectSublist(layermask, objnode, CameraObject.class); 
+        
+        objnode = new ObjListTreeNode();
+        objnode.setUserObject("Demo Object");
+        root.add(objnode);
+        populateObjectSublist(layermask, objnode, DemoObject.class);         
+        
+        // Keep this at the bottom. It will screw up folders placed under it.
+        objnode = new ObjListTreeNode();
         objnode.setUserObject("Paths");
         root.add(objnode);
         
