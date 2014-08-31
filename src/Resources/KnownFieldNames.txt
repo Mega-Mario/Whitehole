@@ -35,11 +35,70 @@ ScenarioName
 PowerStarId
 AppearPowerStarObj
 Comet
+CometLimitTimer
 LuigiModeTimer
 IsHidden
 Hidden
 # TODO: D6C80400
 
+# Galaxies from Hashes
+AbekobeGalaxy
+AncientExcavationGalaxy
+BigGalaxy
+BigTree2Galaxy
+BigWaterFallGalaxy
+ChallengeGliderGalaxy
+ChaosGravityGalaxy
+CloudGardenGalaxy
+DigMineGalaxy
+DimensionBigCastleGalaxy
+FileSelect
+FlowerHighlandGalaxy
+GhostConveyorGalaxy
+HoneyBeeVillageGalaxy
+IslandFleetGalaxy
+JungleGliderGalaxy
+KachikochiLavaGalaxy
+KingOfKingsGalaxy
+KoopaJrLv2Galaxy
+LongForCastleGalaxy
+MadnessOnimasuGalaxy
+MagicGalaxy
+MarioFaceShipGalaxy
+MarioOnMarioGalaxy
+MemoryRoadGalaxy
+MokumokuValleyGalaxy
+MysteryCandyGalaxy
+OmoteuLandGalaxy
+PeachCastleGalaxy
+QuicksandGalaxy
+RedBlueExGalaxy
+SecretAthleticGalaxy
+StaffRollGalaxy
+StarCreekGalaxy
+SwitchMoveBlockGalaxy
+TamakoroPlanetGalaxy
+TamakoroSliderGalaxy
+TeresaLabyrinthGalaxy
+ThunderFleetGalaxy
+TimerSwitchingPlatformGalaxy
+VsKoopaGravityGalaxy
+VsKoopaJrLv1Galaxy
+VsKoopaJrLv3Galaxy
+VsKoopaLv1Galaxy
+VsKoopaLv3Galaxy
+WanwanFactoryGalaxy
+WhiteSnowGalaxy
+WorldMap01Galaxy
+WorldMap02Galaxy
+WorldMap03Galaxy
+WorldMap04Galaxy
+WorldMap05Galaxy
+WorldMap06Galaxy
+WorldMap07Galaxy
+WorldMap08Galaxy
+YosshiHomeGalaxy
+# TODO: Zones.
 # GalaxyInfo
 WorldNo
 
