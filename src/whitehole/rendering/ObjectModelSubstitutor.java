@@ -32,44 +32,89 @@ public class ObjectModelSubstitutor
     {
         switch (obj.name)
         {
+            case "CoinReplica": return "Coin";
+            case "SuperSpinDriverPink": return "SuperSpinDriver";
+            case "SuperSpinDriverGreen": return "SuperSpinDriver";
+            case "BenefitItemInvincible": return "PowerUpInvincible";
+            case "BenefitItemLifeUp": return "KinokoLifeUp";
             case "BenefitItemOneUp": return "KinokoOneUp";
-            case "SplashPieceBlock": return "CoinBlock";                
-            case "Karikari": return "Karipon";                
-            case "JetTurtle": return "Koura";           
-            case "BenefitItemInvincible": return "PowerUpInvincible";                
-            case "BenefitItemLifeUp": return "KinokoLifeUp";               
-            case "MorphItemNeoBee": return "PowerUpBee";                
-            case "MorphItemNeoFire": return "PowerUpFire";    
+            case "MorphItemNeoBee": return "PowerUpBee";
+            case "MorphItemNeoFire": return "PowerUpFire";
             case "MorphItemNeoHopper": return "PowerUpHopper";
-            case "MorphItemNeoIce": return "PowerUpIce"; 
-            case "MorphItemNeoTeresa": return "PowerUpTeresa"; 
+            case "MorphItemNeoIce": return "PowerUpIce";
+            case "MorphItemNeoTeresa": return "PowerUpTeresa";
+            case "MorphItemNeoFoo": return "PowerUpFoo";
+            case "MorphItemRock": return "PowerUpRock";
             case "SpinCloudItem": return "PowerUpCloud";
-            case "MorphItemRock": return "PowerUpRock"; 
-            case "MorphItemNeoFoo": return "PowerUpFoo";                
-            case "YoshiCapture": return "YCaptureTarget";
+            case "TreasureBoxEmpty": return "TreasureBox";
+            case "TreasureBoxKinokoOneUp": return "TreasureBox";
+            case "TreasureBoxBlueChip": return "TreasureBox";
+            case "TreasureBoxCoin": return "TreasureBox";
+            case "TreasureBoxCrackedAirBubble": return "TreasureBoxCracked";
+            case "TreasureBoxCrackedBlueChip": return "TreasureBoxCracked";
+            case "TreasureBoxCrackedCoin": return "TreasureBoxCracked";
+            case "TreasureBoxCrackedEmpty": return "TreasureBoxCracked";
+            case "TreasureBoxCrackedKinokoLifeUp": return "TreasureBoxCracked";
+            case "TreasureBoxCrackedKinokoOneUp": return "TreasureBoxCracked";
+            case "TreasureBoxCrackedPowerStar": return "TreasureBoxCracked";
+            case "TreasureBoxCrackedYellowChip": return "TreasureBoxCracked";
+            case "TreasureBoxGoldEmpty": return "TreasureBoxGold";
+            case "TreasureBoxYellowChip": return "TreasureBox";
+            case "ItemBlockSwitch": return "CoinBlock";
+            case "TimerCoinBlock": return "CoinBlock";
+            case "SplashPieceBlock": return "CoinBlock";
             case "WingBlockStarPiece": return "WingBlock";
             case "WingBlockCoin": return "WingBlock";
-            case "HanachanBig": return "HanachanHeadBig";     
-            case "TreasureBoxEmpty": return "TreasureBox";
-            case "TreasureBoxKinokoOneUp": return "TreasureBox";    
-            case "TreasureBoxBlueChip": return "TreasureBox"; 
-            case "TreasureBoxCoin": return "TreasureBox"; 
-            case "TreasureBoxCrackedAirBubble": return "TreasureBoxCracked"; 
-            case "TreasureBoxCrackedEmpty": return "TreasureBoxCracked"; 
-            case "TreasureBoxCrackedKinokoLifeUp": return "TreasureBoxCracked";                 
-            case "TreasureBoxCrackedKinokoOneUp": return "TreasureBoxCracked";   
-            case "TreasureBoxGoldEmpty": return "TreasureBoxGold";                
-            case "TreasureBoxYellowChip": return "TreasureBox";                               
-            case "GhostPlayer": return "GhostMario";    
-            case "CutBushGroup": return "CutBush"; 
-            case "Rabbit": return "TrickRabbit";
-            case "ArrowSwitchMulti": return "ArrowSwitch";
-            case "Horino": return "DrillBullet";
+            case "JetTurtle": return "Koura";
+            case "GoldenTurtle": return "Koura";
             case "NoteFairy": return "Note";
-            case "TimerCoinBlock": return "CoinBlock";
-            case "TeresaWater": return "Teresa";
+            case "GreenStar": return "PowerStar";
+            case "ArrowSwitchMulti": return "ArrowSwitch";
+            case "YoshiCapture": return "YCaptureTarget";
+            case "Creeper": return "CreeperFlower";
+            case "CutBushGroup": return "CutBush";
+            case "BombLauncher": return "BombHeiLauncher";
+            case "ChildIceMeramera": return "IceMeramera";
+            case "ChildMeramera": return "Meramera";
+            case "ChildKameck": return "Kameck";
+            case "ChildKuribo": return "KuriboMini";
+            case "ChildSkeletalFishBaby": return "SkeletalFishBaby";
+            case "FireBallBeamKameck": return "Kameck";
+            case "TurtleBeamKameck": return "Kameck";
             case "KameckMeramera": return "Kameck";
             case "KameckKuriboMini": return "Kameck";
+            case "TubeSliderEnemy": return "Togezo";
+            case "TubeSliderDamageObj": return "NeedlePlant";
+            case "TubeSliderHana": return "HanachanHeadBig";
+            case "HanachanBig": return "HanachanHeadBig";
+            case "Hanachan": return "HanachanHead";
+            case "ShellfishCoin": return "Shellfish";
+            case "ShellfishYellowChip": return "Shellfish";
+            case "FirePressureRadiate": return "FirePressure";
+            case "GhostPlayer": return "GhostMario";
+            case "Horino": return "DrillBullet";
+            case "InstantInferno": return "InfernoMario";
+            case "Karikari": return "Karipon";
+            case "KirairaRail": return "Kiraira";
+            case "KoopaStatueVomit": return "KoopaStatue";
+            case "OnimasuPivot": return "Onimasu";
+            case "PukupukuWaterSurface": return "Pukupuku";
+            case "TeresaWater": return "Teresa";
+            case "Tongari2D": return "Tongari";
+            case "TicoAstro": return "Tico";
+            case "TicoFatCoin": return "TicoFat";
+            case "TicoRail": return "Tico";
+            case "KinopioBank": return "Kinopio";
+            case "KinopioPostman": return "Kinopio";
+            case "MameMuimuiAttackMan": return "ScoreAttackMan";
+            case "MameMuimuiScorer": return "ScoreAttackMan";
+            case "MameMuimuiScorerLv2": return "ScoreAttackMan";
+            case "PlayAttackMan": return "ScoreAttackMan";
+            case "TogepinAttackMan": return "ScoreAttackMan";
+            case "Rabbit": return "TrickRabbit";
+            case "KoopaNpc": return "Koopa";
+            case "GliBirdNpc": return "GliBird";
+            case "SignBoardTamakoro": return "SignBoard";
         }
        
         //modelname="TicoCoin";//"VROrbit";//"CollapsePlane";
@@ -142,7 +187,15 @@ public class ObjectModelSubstitutor
                 
                 case "BegomanSpike": return new DoubleBmdRenderer(info, "BegomanSpikeHead", new Vector3(), "BegomanSpike", new Vector3());
                     
-                case "BegomanSpring": return new DoubleBmdRenderer(info, "BegomanSpringHead", new Vector3(), "BegomanSpike", new Vector3());            
+                case "BegomanSpring": return new DoubleBmdRenderer(info, "BegomanSpringHead", new Vector3(), "BegomanSpring", new Vector3());
+                
+                case "BegomanSpringHide": return new DoubleBmdRenderer(info, "BegomanSpringHead", new Vector3(), "BegomanSpring", new Vector3());
+                
+                case "Nyoropon": return new DoubleBmdRenderer(info, "NyoroponHead", new Vector3(), "NyoroponBody", new Vector3());
+                
+                case "KillerShooter": return new DoubleBmdRenderer(info, "MogucchiSpike", new Vector3(), "GliderBazooka", new Vector3());
+                
+                case "GliderShooter": return new DoubleBmdRenderer(info, "MogucchiSpike", new Vector3(), "GliderBazooka", new Vector3());            
             }
         }
         catch (IOException ex) {}
